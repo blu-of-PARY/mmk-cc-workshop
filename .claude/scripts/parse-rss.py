@@ -1,31 +1,24 @@
 #!/usr/bin/env python3
-"""YouTube RSS XML 피드를 파싱하여 JSON으로 출력하는 스크립트.
+"""YouTube RSS XML 파서 — stdin으로 XML을 받아 JSON 배열을 stdout으로 출력."""
 
-Usage:
-    curl -s "https://www.youtube.com/feeds/videos.xml?channel_id=CHANNEL_ID" | python3 parse-rss.py [channel_name]
-"""
-
-import json
 import sys
+import json
 import xml.etree.ElementTree as ET
 
-NAMESPACES = {
-    "atom": "http://www.w3.org/2005/Atom",
-    "yt": "http://www.youtube.com/xml/schemas/2015",
-    "media": "http://search.yahoo.com/mrss/",
-}
-
-
-def parse_feed(xml_text: str, channel_name: str = "") -> list[dict]:
+def parse_feed(xml_text, channel_name=""):
     root = ET.fromstring(xml_text)
-    entries = []
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "yt": "http://www.youtube.com/xml/schemas/2015",
+        "media": "http://search.yahoo.com/mrss/",
+    }
 
-    for entry in root.findall("atom:entry", NAMESPACES):
-        video_id = entry.find("yt:videoId", NAMESPACES)
-        title = entry.find("atom:title", NAMESPACES)
-        published = entry.find("atom:published", NAMESPACES)
-        link = entry.find('atom:link[@rel="alternate"]', NAMESPACES)
-        author = entry.find("atom:author/atom:name", NAMESPACES)
+    entries = []
+    for entry in root.findall("atom:entry", ns):
+        video_id = entry.find("yt:videoId", ns)
+        title = entry.find("atom:title", ns)
+        published = entry.find("atom:published", ns)
+        link = entry.find("atom:link", ns)
 
         if video_id is None or title is None:
             continue
@@ -33,25 +26,19 @@ def parse_feed(xml_text: str, channel_name: str = "") -> list[dict]:
         entries.append({
             "videoId": video_id.text,
             "title": title.text,
-            "channelName": channel_name or (author.text if author is not None else ""),
+            "channelName": channel_name,
             "publishedAt": published.text if published is not None else "",
-            "url": link.get("href") if link is not None else f"https://www.youtube.com/watch?v={video_id.text}",
+            "url": link.get("href", "") if link is not None else f"https://www.youtube.com/watch?v={video_id.text}",
         })
 
     return entries
 
-
-def main():
-    xml_text = sys.stdin.read()
+if __name__ == "__main__":
     channel_name = sys.argv[1] if len(sys.argv) > 1 else ""
-
+    xml_text = sys.stdin.read()
     try:
         entries = parse_feed(xml_text, channel_name)
         print(json.dumps(entries, ensure_ascii=False, indent=2))
     except ET.ParseError as e:
-        print(json.dumps({"error": f"XML parse error: {e}"}), file=sys.stderr)
+        print(json.dumps({"error": str(e)}), file=sys.stderr)
         sys.exit(1)
-
-
-if __name__ == "__main__":
-    main()
