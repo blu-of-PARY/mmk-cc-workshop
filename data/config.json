@@ -23,7 +23,7 @@
   "slack_webhook_url": "$SLACK_WEBHOOK_URL",
   "notion": {
     "parent_page_id": "33d619def8f4805ba721f99f957d70bd",
-    "database_id": "",
-    "data_source_id": ""
+    "database_id": "3eed9e874988484997b36607ae8c1785",
+    "data_source_id": "c69360f0-25ec-4945-bc06-47e7d1648632"
   }
 }
