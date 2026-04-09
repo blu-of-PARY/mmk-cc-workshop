@@ -1,0 +1,29 @@
+{
+  "channels": [
+    {
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "name": "한경글로벌마켓",
+      "title_keywords": ["개장전요것만", "월스트리트나우"]
+    },
+    {
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "name": "한국경제TV",
+      "title_keywords": ["당잠사"]
+    },
+    {
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "name": "증시각도기TV",
+      "title_keywords": []
+    }
+  ],
+  "filter": {
+    "skip_shorts": true,
+    "max_age_hours": 24
+  },
+  "slack_webhook_url": "$SLACK_WEBHOOK_URL",
+  "notion": {
+    "parent_page_id": "33d619def8f4805ba721f99f957d70bd",
+    "database_id": "",
+    "data_source_id": ""
+  }
+}

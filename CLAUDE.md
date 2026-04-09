@@ -47,3 +47,57 @@ mmk youtube videotype <youtube-url>
 - 호스트명, OS, CPU, 메모리, 디스크
 - Git, Python, Node, mmk 버전
 - 원격 환경 여부
+
+## 증시 유튜브 모니터링 시스템
+
+한국 증시 유튜브 채널을 자동 모니터링하여 자막 추출 → AI 요약 → Slack 알림 → Notion 저장하는 시스템.
+
+### 모니터링 대상 채널
+
+| 채널 | 대상 콘텐츠 | 필터 키워드 |
+|------|-----------|-----------|
+| 한경글로벌마켓 | 빈난새의 개장전요것만, 김현석의 월스트리트나우 | `개장전요것만`, `월스트리트나우` |
+| 한국경제TV | 당잠사 | `당잠사` |
+| 증시각도기TV | 전체 | (필터 없음) |
+
+### 스킬 목록
+
+| 스킬 | 설명 |
+|------|------|
+| `/yt-setup` | 초기 설정 (Notion DB 생성, Slack 연결 테스트) |
+| `/yt-discover` | RSS 피드로 새 영상 탐색 |
+| `/yt-summarize <url>` | 영상 자막 추출 + AI 요약 |
+| `/yt-notify-slack` | Slack 웹훅 알림 전송 |
+| `/yt-save-notion` | Notion DB 저장 |
+| `/yt-monitor` | 전체 파이프라인 오케스트레이터 |
+
+### 사용법
+
+```bash
+# 1. 초기 설정 (최초 1회)
+/yt-setup
+
+# 2. 수동 테스트
+/yt-discover
+/yt-summarize https://www.youtube.com/watch?v=VIDEO_ID
+
+# 3. 자동 실행 (1시간 간격)
+/loop 1h /yt-monitor
+```
+
+### 환경변수
+
+Slack 웹훅 URL은 환경변수로 설정해야 합니다:
+```bash
+export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+```
+
+### 설정 파일
+
+- `data/config.json` — 채널 목록, 필터, Notion DB ID
+- `data/processed.json` — 처리 완료 영상 기록 (중복 방지)
+- `.claude/scripts/parse-rss.py` — YouTube RSS XML 파서
+
+### Notion DB 스키마
+
+제목(Title), Video ID, 채널(Select), URL, 게시일(Date), 요약, 키워드(Multi-select), 상태(Select)
