@@ -1,4 +1,20 @@
 {
-  "processed_videos": {},
-  "last_run": ""
+  "processed_videos": {
+    "x4nf9Korgz0": {
+      "title": "[김현석의 월스트리트나우-4월9일] 휴전에도 해협 통과 4척뿐",
+      "channel": "한경글로벌마켓",
+      "processed_at": "2026-04-09T07:53:58.487245+00:00"
+    },
+    "_KfExsQ9gyY": {
+      "title": "[빈난새의 개장전요것만-4월8일]",
+      "channel": "한경글로벌마켓",
+      "processed_at": "2026-04-09T07:56:09.143448+00:00"
+    },
+    "JZOjWQf2bgE": {
+      "title": "[LIVE 4월 9일 미국시황] 이스라엘 레바논 폭격",
+      "channel": "증시각도기TV",
+      "processed_at": "2026-04-09T07:58:08.568289+00:00"
+    }
+  },
+  "last_run": "2026-04-09T07:58:08.568289+00:00"
 }
