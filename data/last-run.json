@@ -1,0 +1,72 @@
+{
+  "run_timestamp": "2026-11-02T23:10:00Z",
+  "channels_checked": 3,
+  "videos_found": {
+    "한경글로벌마켓": 5,
+    "한국경제TV": 15,
+    "증시각도기TV": 4
+  },
+  "videos_processed": [
+    {
+      "video_id": "jmQolgkrx_g",
+      "channel": "한국경제TV",
+      "title": "[11/03 #당잠사] 애플·팔란티어 실적발표 | 이란 대통령 협상 권한 부여…유가 7%대 급락",
+      "published": "2026-11-02T21:23:35Z",
+      "status": "처리완료",
+      "notion_url": "https://app.notion.com/p/40c619def8f481e199f9f8e6ccf81e9a?pvs=204"
+    },
+    {
+      "video_id": "4c-RZx0PKSA",
+      "channel": "한국경제TV",
+      "title": "빅테크 폭락에도 버틴 애플…기술주 반등, 애플 실적에 달렸다",
+      "published": "2026-11-02T15:28:58Z",
+      "status": "처리완료",
+      "notion_url": "https://app.notion.com/p/40c619def8f481d68c60d4f717b51fa8?pvs=204"
+    },
+    {
+      "video_id": "ozMJS8ChedM",
+      "channel": "한경글로벌마켓",
+      "title": "[박신영의 개장전요것만-11/02] 인텔 저가매수 신중해야 | 팔란티어 월가 긍정 vs 개인 약세",
+      "published": "2026-11-02T15:04:03Z",
+      "status": "처리완료",
+      "notion_url": "https://app.notion.com/p/40c619def8f4815c875dfb68806cb180?pvs=204"
+    },
+    {
+      "video_id": "vEZ_uZ6MEsU",
+      "channel": "한경글로벌마켓",
+      "title": "트럼프 '수퍼 레임덕' 오나… 블루웨이브 기대하는 미국 민주당",
+      "published": "2026-11-02T03:53:28Z",
+      "status": "처리완료",
+      "notion_url": "https://app.notion.com/p/40c619def8f481158eede3168a88b00f?pvs=204"
+    },
+    {
+      "video_id": "bOoU8IHTKFs",
+      "channel": "증시각도기TV",
+      "title": "[11/02 한국시황] 삼성전자·하이닉스 실적에도 부진? 반등 임박 | SK스퀘어 역대급 주주환원",
+      "published": "2026-11-02T08:40:06Z",
+      "status": "처리완료",
+      "notion_url": "https://app.notion.com/p/40c619def8f48194bef0f8a904038df1?pvs=204"
+    },
+    {
+      "video_id": "ooCtOVzMeiM",
+      "channel": "증시각도기TV",
+      "title": "[11/02 한국장 전] 애플 시총 1위 탈환! 오픈AI 투자 유치 100억달러 축소",
+      "published": "2026-11-01T23:25:11Z",
+      "status": "처리완료",
+      "notion_url": "https://app.notion.com/p/40c619def8f4813fa176d0ab67971fe9?pvs=204"
+    }
+  ],
+  "videos_skipped": [
+    {
+      "video_id": "8Rj35sknn-I",
+      "channel": "증시각도기TV",
+      "reason": "자막 미생성 (업로드 직후)"
+    },
+    {
+      "video_id": "L_SslyBpb_c",
+      "channel": "한경글로벌마켓",
+      "reason": "자막 미생성 (업로드 직후)"
+    }
+  ],
+  "slack_notification": "skipped - webhook URL redacted in config"
+}

@@ -1,0 +1,33 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "handle": "@한경글로벌마켓",
+      "youtube_url": "https://www.youtube.com/@%ED%95%9C%EA%B2%BD%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%93",
+      "rss_feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWskYkV4c4S9D__rsfOl2JA",
+      "description": "한국경제신문 해외투자 전문 채널. 월나우, 클로징벨, 개장전요것만 등 미국 증시 분석 프로그램 운영"
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "handle": "@hkwowtv",
+      "youtube_url": "https://www.youtube.com/@hkwowtv",
+      "rss_feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCF8AeLlUbEpKju6v1H6p8Eg",
+      "description": "대한민국 No.1 경제/증권 채널. 당잠사(당신이 잠든 사이), 더워룸, 스탁리그 등 경제/증권 프로그램 운영"
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "handle": "@koreanstockrider",
+      "youtube_url": "https://www.youtube.com/@koreanstockrider",
+      "rss_feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "description": "곽상준 대표의 투자/경제 분석 채널. 미국시황, 한국시황, 중국시황 등 매일 시장 분석 제공"
+    }
+  ],
+  "monitoring": {
+    "lookback_hours": 24,
+    "exclude_shorts": true,
+    "max_videos_per_channel": 3
+  }
+}
