@@ -1,0 +1,26 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "handle": "@한경글로벌마켓",
+      "url": "https://www.youtube.com/channel/UCWskYkV4c4S9D__rsfOl2JA"
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "handle": "@hkwowtv",
+      "url": "https://www.youtube.com/@hkwowtv"
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "handle": "@koreanstockrider",
+      "url": "https://www.youtube.com/@koreanstockrider"
+    }
+  ],
+  "monitor": {
+    "check_interval_hours": 24,
+    "max_videos_per_channel": 5
+  }
+}
