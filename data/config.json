@@ -1,0 +1,30 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "handle": "@hkglobalmarket",
+      "url": "https://www.youtube.com/@hkglobalmarket",
+      "description": "한국경제 해외투자 전문 채널"
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "handle": "@hkwowtv",
+      "url": "https://www.youtube.com/@hkwowtv",
+      "description": "대한민국 No.1 경제/증권 방송"
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "handle": "@koreanstockrider",
+      "url": "https://www.youtube.com/@koreanstockrider",
+      "description": "증시 분석 및 투자 전략 채널 (곽상준 대표)"
+    }
+  ],
+  "settings": {
+    "check_interval_hours": 24,
+    "transcript_format": "text",
+    "preferred_lang": "ko"
+  }
+}
