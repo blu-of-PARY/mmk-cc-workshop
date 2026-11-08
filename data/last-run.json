@@ -1,0 +1,33 @@
+{
+  "run_date": "2026-11-08",
+  "run_timestamp": "2026-11-08T23:00:00Z",
+  "channels_checked": 3,
+  "videos_found": 14,
+  "transcripts_extracted": 3,
+  "transcripts_failed": 3,
+  "notion_page_url": "https://app.notion.com/p/412619def8f48144be16e621edc11453?pvs=204",
+  "slack_sent": false,
+  "slack_reason": "SLACK_WEBHOOK_URL not set",
+  "videos": {
+    "한경글로벌마켓": [
+      {"id": "mRL_8AYmVZ0", "title": "눈높이 낮출 시간이 왔다ㅣ김현석의 월나우 위클리Q", "published": "2026-11-08T22:00:35Z", "transcript": true},
+      {"id": "5-cOs1VB5dE", "title": "앤트로픽 IPO가 걱정되는 이유", "published": "2026-11-08T12:00:25Z", "transcript": false},
+      {"id": "2r-6jJ3FK5k", "title": "트럼프가 민주당과 협력할 이유 | 머스크의 운명은 | 월가백브리핑", "published": "2026-11-08T03:00:10Z", "transcript": true}
+    ],
+    "한국경제TV": [
+      {"id": "6VaZ9nDRBGk", "title": "극단적 언더 슈팅, 패닉셀 만큼은 하지 마라!", "published": "2026-11-08T22:45:15Z", "transcript": false},
+      {"id": "THDY9UY_i_Y", "title": "[🔴11/09 #당잠사] 기술주 저가 매수에 나스닥 1.1%·SOX 4.2% 반등", "published": "2026-11-08T21:23:12Z", "transcript": true},
+      {"id": "SRJxOC1mmrE", "title": "뉴욕증시, AI 기술주 반등...저가 매수세 유입", "published": "2026-11-08T22:21:48Z", "transcript": false},
+      {"id": "6gP06REDcao", "title": "개미들은 월요일만 기다립니다 - 美 반도체 회복 성공!", "published": "2026-11-08T15:05:10Z", "transcript": false},
+      {"id": "GkZzLXvkymM", "title": "[LIVE] 美 반도체 공포 탈출, 월요일 한숨 돌릴까?", "published": "2026-11-08T14:13:21Z", "transcript": false},
+      {"id": "nhP7Rp9KC2M", "title": "[LIVE] 금양그린파워 급등 전 3가지 신호", "published": "2026-11-08T07:57:55Z", "transcript": false},
+      {"id": "5PRnjUbMY6A", "title": "글로벌 1분 시황 (Shorts)", "published": "2026-11-08T22:43:35Z", "transcript": false}
+    ],
+    "증시각도기TV": [
+      {"id": "I2D1_MgAir8", "title": "[11월9일 월요일 한국장 전]", "published": "2026-11-08T22:25:16Z", "transcript": false},
+      {"id": "au03eAG3VVo", "title": "[복습용 풀버전] 가격이 떨어질수록 주식시장의 매력은 점점 올라갑니다", "published": "2026-11-08T03:00:18Z", "transcript": false},
+      {"id": "QAzC6YbY0O8", "title": "정부가 주가를 부양하냐고요?", "published": "2026-11-08T03:00:37Z", "transcript": false},
+      {"id": "7Y3FDMrddqA", "title": "유가 - 미국은 중동 석유 필요 없다 (도기아카데미)", "published": "2026-11-08T01:00:07Z", "transcript": false}
+    ]
+  }
+}
