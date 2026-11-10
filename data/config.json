@@ -1,0 +1,28 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "handle": "@한경글로벌마켓",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWskYkV4c4S9D__rsfOl2JA"
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "handle": "@hkwowtv",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCF8AeLlUbEpKju6v1H6p8Eg"
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "handle": "@koreanstockrider",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdOjVxkj5JA0iDu3_xcsTyQ"
+    }
+  ],
+  "monitoring": {
+    "lookback_hours": 24,
+    "skip_shorts": true,
+    "preferred_lang": "ko",
+    "transcript_format": "text"
+  }
+}
