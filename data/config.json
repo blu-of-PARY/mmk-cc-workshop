@@ -1,0 +1,41 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "channel_url": "https://www.youtube.com/channel/UCWskYkV4c4S9D__rsfOl2JA",
+      "enabled": true,
+      "keywords": ["개장전요것만", "빈난새", "월스트리트나우", "김현석", "Wall Street Now", "빈틈없이월가"]
+    },
+    {
+      "name": "한국경제TV",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "channel_url": "https://www.youtube.com/channel/UCF8AeLlUbEpKju6v1H6p8Eg",
+      "enabled": true,
+      "keywords": ["당잠사"]
+    },
+    {
+      "name": "증시각도기TV",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "channel_url": "https://www.youtube.com/channel/UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "enabled": true,
+      "keywords": []
+    }
+  ],
+  "filter": {
+    "exclude_keywords": ["shorts", "#shorts", "라이브", "LIVE"],
+    "max_age_hours": 24,
+    "min_duration_seconds": 180,
+    "max_duration_seconds": 7200
+  },
+  "slack": {
+    "webhook_env": "SLACK_WEBHOOK_URL"
+  },
+  "notion": {
+    "save_as_draft": true
+  },
+  "processing": {
+    "videos_per_channel": 10,
+    "max_subtitle_chars": 15000
+  }
+}
