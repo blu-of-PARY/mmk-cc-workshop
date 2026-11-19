@@ -1,0 +1,32 @@
+{
+  "channels": [
+    {
+      "name": "한경글로벌마켓",
+      "handle": "@hkglobalmarket",
+      "channel_id": "UCWskYkV4c4S9D__rsfOl2JA",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWskYkV4c4S9D__rsfOl2JA",
+      "flagship_shows": ["클로징벨 요것만", "개장전 요것만", "월스트리트나우", "월가백브리핑"]
+    },
+    {
+      "name": "한국경제TV",
+      "handle": "@hkwowtv",
+      "channel_id": "UCF8AeLlUbEpKju6v1H6p8Eg",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCF8AeLlUbEpKju6v1H6p8Eg",
+      "flagship_shows": ["뉴욕인사이트", "파이널콜", "더 워룸", "당잠사"],
+      "note": "자막 미제공 채널 — 제목 기반 요약만 가능"
+    },
+    {
+      "name": "증시각도기TV",
+      "handle": "@koreanstockrider",
+      "channel_id": "UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdOjVxkj5JA0iDu3_xcsTyQ",
+      "flagship_shows": ["미국시황", "한국시황", "중국시황", "한국장 전"]
+    }
+  ],
+  "settings": {
+    "lookback_hours": 24,
+    "max_videos_per_channel": 5,
+    "transcript_format": "text",
+    "preferred_lang": "ko"
+  }
+}
